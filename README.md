@@ -1,7 +1,7 @@
 # Eye-Tracking
 
-The objective of the project is to learn how to analyze and visualize eye-tracking data. The dataset consists of rows (one row per one session and one subject) of raw gaze locations x,y recorded in time. Subjects have multiple rows/samples in the dataset.
-The dataset has been recorded in a situation where subjects were shown images and had to indicate if they recognized the image or not. A detailed description of the dataset follows:
+
+### The objective of the project is to learn how to analyze and visualize eye-tracking data. The dataset consists of rows (one row per one session and one subject) of raw gaze locations x,y recorded in time. Subjects have multiple rows/samples in the dataset. The dataset has been recorded in a situation where subjects were shown images and had to indicate if they recognized the image or not. A detailed description of the dataset follows:
 ----------------------
 The dataset is available in CSV format (a text file with one row for every sample) or a Matlab format. Every line is a list of comma separated elements as follows:
 sid, known, x1, y1, ....xn, yn
