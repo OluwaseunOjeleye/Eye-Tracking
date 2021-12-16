@@ -1,0 +1,11 @@
+Parameter Settings:
+	# Fixation and Saccade Threshold
+	sac_min_thres = 120       # degree
+	sac_max_thres = 700       # degree
+	fix_max_thres = 30        # degree
+Results:
+	Average Fixation Durations 236.0
+	Number of Fixations:  7
+	Fixation Durations:  [85.0, 188.0, 165.0, 386.0, 416.0, 265.0, 147.0]
+	Centroids x-axis:  [152.2850588235294, -358.6520212765959, -597.1105454545454, 36.18857512953365, -621.7122836538471, -46.8856603773585, -588.9257142857143]
+	Centroids y-axis:  [35.098705882352945, -362.91340425531956, -566.768727272727, -339.67305699481886, -615.3798317307705, -355.2764905660375, -591.1648979591831]

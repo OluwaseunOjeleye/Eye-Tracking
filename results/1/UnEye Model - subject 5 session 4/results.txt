@@ -1,0 +1,12 @@
+Parameter Settings:
+	# Fixation and Saccade Threshold
+	sac_min_thres = # degree
+	sac_max_thres = # degree
+	fix_max_thres = # degree
+
+Results:
+	Average Fixation Durations: 
+	Number of Fixations:  
+	Fixation Durations:  
+	Centroids x-axis:  
+	Centroids y-axis:  
