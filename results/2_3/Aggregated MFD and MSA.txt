@@ -1,2 +1,2 @@
-Aggregated Mean Fixation Duration (MFD) for all subjects is :  198.4806873075949 ms and its standard deviation is:  25.540639959774424
-Aggregated Mean Saccade Amplitude (MSA) for all subjects is :  5.2128679013856125 ° and its standard deviation is:  0.7014816888410521
+Aggregated Mean Fixation Duration (MFD) for all subjects is :  225.4907073569226 ms and its standard deviation is:  25.907918663824777
+Aggregated Mean Saccade Amplitude (MSA) for all subjects is :  5.2152766583373875 ° and its standard deviation is:  0.6936041351019592
