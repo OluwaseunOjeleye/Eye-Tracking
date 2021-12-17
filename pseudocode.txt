@@ -1,0 +1,41 @@
+Algorithm:
+1. Get subject’s raw (x, y) eye gaze pixel data for each sessions from the csv file.
+2. Convert (x, y) pixel data to visual angle, θ.
+3. Calculate velocity at each instantaneous visual angle using velocity FIR filter.
+   Velocity FIR filter, h:
+	h = {1, -1} 				for a 2-tap FIR filter
+	h = {-3, -2, -1, 0, 1, 2, 3} 		for a 7-tap FIR filter
+4. Label each velocity point below velocity threshold as a fixation point, otherwise as a saccade point. 
+5. Collapse consecutive fixation points into fixation groups and saccade points into saccade groups.
+6. Return fixations and Saccades
+
+
+Pseudocode:
+Fixation_Detection(θ[N], h[k], sac_min, sac_max, fix_max):
+	//initialization of Velocity
+	for i = 0 to N−k−1:
+    		velocity[i] = 0
+
+	//calculating velocity using velocity FIR Filter
+	for i = 0 to N−k−1:
+	    for j = 0 to k:
+	        velocity[i] = velocity[i] + (θ[i+j]*h[j])
+	
+	//detection of fixation groups and saccade groups
+	for i = 0 to N−k−1:
+    		if (velocity[i] >= sac_min and velocity[i] <= sac_max):
+			if (fixation_group is not empty):
+				add fixation_group to fixations and clear fixation_group 			
+			add gaze point (x[i], y[i]) of θ[i] to saccade_group
+			
+		else if (velocity[i] <= fix_max):
+			if (saccade_group is not empty):
+				add saccade_group to saccades and clear saccade_group		
+			add gaze point (x[i], y[i]) of θ[i] to fixation_group
+ 
+	if (fixation_group is not empty):
+		add fixation_group to fixations and clear fixation_group
+	if (saccade_group is not empty):
+		add saccade_group to saccades and clear saccade_group 
+
+	return fixations, saccades

@@ -1,0 +1,12 @@
+# Parameters Setting
+sampling_rate = 1000      # 1/T = 1000Hz
+
+# Setup
+distance      = 450       # mm
+height        = 113       # mm
+res_height    = 1400
+
+# Fixation and Saccade Threshold
+sac_min_thres = 130       # degree
+sac_max_thres = 750       # degree
+fix_max_thres = 50        # degree
